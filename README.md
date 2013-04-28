@@ -8,6 +8,8 @@ Provides a dependency containing a lein uberjar.
 [lein-as-resource "0.1.0-SNAPSHOT"]
 ```
 
+The lein uberjar is provided as "lein-standalone.jar".
+
 ## License
 
 Copyright © 2013 Hugo Duncan
