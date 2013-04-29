@@ -6,7 +6,7 @@ Provides a dependency containing a lein uberjar.  See
 ## Usage
 
 ```clj
-[lein-as-resource "0.1.0-SNAPSHOT"]
+[lein-as-resource "2.1.3"]
 ```
 
 The lein uberjar is provided as "lein-standalone.jar".

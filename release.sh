@@ -2,14 +2,13 @@
 
 # release lein-as-resource
 
-if [[ $# -lt 3 ]]; then
-  echo "usage: $(basename $0) new-version" >&2
+if [[ $# -lt 2 ]]; then
+  echo "usage: $(basename $0) previous-version new-version" >&2
   exit 1
 fi
 
 previous_version=$1
 version=$2
-next_version=$3
 
 echo ""
 echo "Start release of $version, previous version is $previous_version"
