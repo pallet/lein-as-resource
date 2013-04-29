@@ -3,14 +3,15 @@
   :url "https://github.com/pallet/lein-as-resource"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.5.1"]
-                 [leiningen "2.1.3"]]
-  ;; :uberjar-exclusions [#"^clojure/.*$" #"META-INF/maven/org.clojure/clojure.*"]
+  :dependencies []
+
   ;; we put the uberjar in classes, which means it will be included
   ;; in the final jar
   :uberjar-name "classes/lein-standalone.jar"
-  :aliases {"jar" ["do" "uberjar," "jar"]
-            "install" ["do" "uberjar," "install"]
-            "deploy" ["do" "uberjar," "deploy"]}
-  :resource {:resource-paths ["target"]
-             :includes [#".*lein-standalone.jar"]})
+
+  ;; we build with the lein profile, to pull in lein, but keep it out
+  ;; of the project's dependencies.
+  :profiles {:lein {:dependencies [[leiningen "2.1.3"]]}}
+  :aliases {"jar" ["do" "with-profile" "+lein" "uberjar," "jar"]
+            "install" ["do" "with-profile" "+lein" "uberjar," "install"]
+            "deploy" ["do" "with-profile" "+lein" "uberjar," "deploy"]})
