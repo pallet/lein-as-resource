@@ -1,6 +1,7 @@
 # lein-as-resource
 
-Provides a dependency containing a lein uberjar.
+Provides a dependency containing a lein uberjar.  See
+[alembic](https://github.comp/pallet/alembic) for why this might be useful.
 
 ## Usage
 
