@@ -1,4 +1,4 @@
-(defproject lein-as-resource "0.1.0-SNAPSHOT"
+(defproject lein-as-resource "2.1.3"
   :description "Provide leiningen as a resource jar on the classpath."
   :url "https://github.com/pallet/lein-as-resource"
   :license {:name "Eclipse Public License"
