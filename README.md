@@ -6,13 +6,13 @@ Provides a dependency containing a lein uberjar.  See
 ## Usage
 
 ```clj
-[lein-as-resource "2.1.3"]
+[lein-as-resource "2.5.0"]
 ```
 
 The lein uberjar is provided as "lein-standalone.jar".
 
 ## License
 
-Copyright © 2013 Hugo Duncan
+Copyright © 2013. 2015 Hugo Duncan
 
 Distributed under the Eclipse Public License.
